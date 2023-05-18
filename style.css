@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-    background-image: linear-gradient(to right, #7ed7f5, #3DB0D0);
+    background-image: linear-gradient(to right,  #19A7CE, #146C94 );
     padding: 0;
 }
 
@@ -37,7 +37,7 @@ body {
 
 }
 ul .dropdown-menu{
-    background-color:  #3DB0D0;
+    background-color:  #146C94 ;
     margin: 0px;
     padding: 0px;
 }
@@ -54,7 +54,7 @@ ul .dropdown-menu{
 }
 
 #banner {
-    background-image: linear-gradient(to right, #7ed7f5, #3DB0D0);
+    background-image: linear-gradient(to right,  #19A7CE, #146C94 );
     color: white;
     padding-top: 5%;
 }
@@ -98,7 +98,7 @@ ul .dropdown-menu{
 
 .title::before {
     content: '';
-    background:  #3DB0D0;
+    background:  #146C94 ;
     height: 5px;
     width: 200px;
     margin-left: auto;
@@ -108,7 +108,7 @@ ul .dropdown-menu{
 }
 .title::after {
     content: '';
-    background:  #3DB0D0;
+    background:  #146C94 ;
     height: 10px;
     width: 50px;
     margin-left: auto;
@@ -130,7 +130,7 @@ ul .dropdown-menu{
     margin:100px 0;
 }
 .testimonials{
-    border-left: 4px solid   #3DB0D0 ;
+    border-left: 4px solid   #146C94  ;
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -164,7 +164,7 @@ ul .dropdown-menu{
 
 /* -------------------Footer Section -------------------- */
 #footer {
-    background-image: linear-gradient(to right,  #7ed7f5, #3DB0D0);
+    background-image: linear-gradient(to right,   #19A7CE, #146C94 );
     color: white;
 }
 
@@ -190,7 +190,7 @@ ul .dropdown-menu{
     text-align: center;
     padding-top: 7px;
     border-radius: 2px;
-    background-image: linear-gradient(to right,  #7ed7f5, #3DB0D0);
+    background-image: linear-gradient(to right,   #19A7CE, #146C94 );
 }
 
 .footer-box .form-control {
