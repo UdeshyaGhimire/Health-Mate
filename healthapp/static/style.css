@@ -316,3 +316,23 @@ hr {
       width: 50%;
     }
   } 
+
+  /* Doctors Section CSS  */
+
+  #doctors {
+    padding: 80px 0;
+}
+.doctors{
+    padding: 20px;
+}
+  #doctors .btn-primary{
+    box-shadow:none;
+    padding: 8px 25px;
+    border:none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #2121fa, blue);
+    
+}
+.cards{
+    padding:10px;
+}

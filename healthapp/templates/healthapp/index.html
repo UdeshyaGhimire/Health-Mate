@@ -1,77 +1,129 @@
 {% extends './base.html' %}
 {% block content %}
-  {% comment %} banner section {% endcomment %}
-  <section id="banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 banner-text">
-          <p class="My-title">Welcome to HealthMate</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            <a href="./consultationform">
+{% comment %} banner section {% endcomment %}
+<section id="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 banner-text">
+        <p class="My-title">Welcome to HealthMate</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          <a href="./consultationform.html">
             <button type="button" class="btn btn-primary btn-lg">
-             Make Appointment</button></a>
-        </div>
-        <div class="col-md-6 banner-img">
-          <img src="static/img/Doctors.png" alt="" class="img-fluid" alternate="Banner">
-        </div>
+              Make Appointment</button></a>
+      </div>
+      <div class="col-md-6 banner-img">
+        <img src="/static/img/Doctors.png" alt="" class="img-fluid" alternate="Banner">
       </div>
     </div>
-    <img src="static/img/wave1.png" class="bottom-img">
-  </section>
+  </div>
+  <img src="/static/img/wave1.png" class="bottom-img">
+</section>
 
-  <!--------------service section-------------->
-  <section id="services">
-    <div class="container text-center">
-      <h1 class="title">OUR SERVICES</h1>
-      <div class="row text-center">
-        <div class="col-md-4 services ">
-          <img src="static/img/doc1.png" class="service-img">
-          <h4>FIND DOCTORS</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ipsa, perspiciatis repellendus maiores
-            ducimus!</p>
-        </div>
 
-        <div class="col-md-4 services ">
-          <img src="static/img/med1.png" class="service-img">
-          <h4>SEARCH MEDICINES</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veniam laudantium illum soluta, veritatis
-            numquam.</p>
-        </div>
-        <div class="col-md-4 services ">
-          <img src="static/img/doc1.png" class="service-img">
-          <h4>GET HEALTH TIPS</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ipsa, perspiciatis repellendus maiores
-            ducimus!</p>
-        </div>
+<!---------------service section-------------->
+<section id="services">
+  <div class="container text-center">
+    <h1 class="title">OUR SERVICES</h1>
+    <div class="row text-center">
+      <div class="col-md-4 services ">
+        <img src="/static/img/doc1.png" class="service-img">
+        <h4>FIND DOCTORS</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ipsa, perspiciatis repellendus maiores
+          ducimus!</p>
       </div>
-      <button type="button" class="btn btn-primary">All Services</button>
-    </div>
-  </section>
-  <!---------------------- Testimonial Section ------------------------>
-  <section id="testimonials">
-    <div class="container">
-      <h1 class="title text-center">TESTIMONIALS</h1>
-      <div class="row">
-        <div class="col-md-5 testimonials">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis dolores nostrum inventore delectus
-            minus.</p>
-            <img src="static/img/angelina.jpg">
-            <p><b>Angelina Jolie</b></p>
-        </div>
 
-        <div class="col-md-5 testimonials">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis dolores nostrum inventore delectus
-            minus.</p>
-            <img src="static/img/jennifer.jpg">
-            <p><b>Jennifer Lopez</b></p>
-        </div>
+      <div class="col-md-4 services ">
+        <img src="/static/img/med1.png" class="service-img">
+        <h4>SEARCH MEDICINES</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veniam laudantium illum soluta, veritatis
+          numquam.</p>
+      </div>
+      <div class="col-md-4 services ">
+        <img src="/static/img/doc1.png" class="service-img">
+        <h4>GET HEALTH TIPS</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ipsa, perspiciatis repellendus maiores
+          ducimus!</p>
       </div>
     </div>
-  </section>
+    <button type="button" class="btn btn-primary">All Services</button>
+  </div>
+</section>
+<!---------------------- Testimonial Section ------------------------>
+<section id="testimonials">
+  <div class="container">
+    <h1 class="title text-center">TESTIMONIALS</h1>
+    <div class="row">
+      <div class="col-md-5 testimonials">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis dolores nostrum inventore delectus
+          minus.</p>
+        <img src="/static/img/angelina.jpg">
+        <p><b>Angelina Jolie</b></p>
+      </div>
+
+      <div class="col-md-5 testimonials">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis dolores nostrum inventore delectus
+          minus.</p>
+        <img src="/static/img/jennifer.jpg">
+        <p><b>Jennifer Lopez</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Doctors Section-->
+<section id="doctors">
+  <div class="container text-centre">
+    <h1 class="title text-center">OUR DOCTORS</h1>
+    <div class="row">
+      <div class="col-md-3 doctors">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/img/doc5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dr.Mellisa Betner</h5>
+            <p class="card-text">Senior Consultant Physician, Best Gastroenterologist and Hepatologist in USA.</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 doctors">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/img/doc4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dr.Adrian Smith</h5>
+            <p class="card-text"> Consultant Physician/Endocrine Researcher with experience of over seven years </p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 doctors">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/img/doc2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dr.Kevin Ngueye</h5>
+            <p class="card-text">Consultant Emergency Physician and Chief of the Emergency Department,Consultant
+              Physician.</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 doctors">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/img/doc3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dr.Sam Stan</h5>
+            <p class="card-text">Consultant Urologist and Andrologist,Male Infertility Specialist.</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary">All Doctors</button>
+    </div>
+  </div>
+</section>
+
+<!-- End Doctors Section-->
 
 
 
-
-  
-  {% endblock %}
+{% endblock %}
