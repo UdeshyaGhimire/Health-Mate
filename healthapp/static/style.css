@@ -31,16 +31,34 @@ body {
 
 }
 
-.navbar-nav li a :focus,
-.navbar-nav li a:hover {
-    color: black;
+.nav-item li a:focus,
+.nav-tem li a:hover {
+    color: rgb(145, 24, 24);
 
 }
+
 ul .dropdown-menu{
-    background-color:  #146C94;
+    position:absolute;
+    background-color:  #4f48cf;
     margin: 0px;
     padding: 0px;
+    width:300;
+    
 }
+
+li .nav-item{
+    border-right: #6b7280;
+}
+    
+
+li .dropdown-item:hover{
+    
+    color: white;
+   background-color:#1796BE;
+   border-bottom: #6b7280;
+}
+
+
 
 /* .dropdown-menu li {
     background-color: #30cd67;
@@ -70,11 +88,17 @@ ul .dropdown-menu{
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(to right, #4f48cf);
 }
-
 .bottom-img {
     width: 100%;
 }
-
+#banner .btn-primary{
+   background-color:#4f48cf;
+   border-color:#4f48cf;
+} 
+#banner .btn-primary:hover{
+    background-color: #1796BE;
+    border-color: #1796BE;
+}
 /*---------------------- Service Section ----------------------------- */
 #services {
     padding: 80px 0;
@@ -122,8 +146,11 @@ ul .dropdown-menu{
     padding: 8px 25px;
     border:none;
     border-radius: 20px;
-    background-image: linear-gradient(to right, #4f48cf)
+    background-color: #4f48cf;
     
+}
+#services .btn-primary:hover{
+    background-color: #1796BE;
 }
 /* ------------------Testimonial Section ------------------ */
 #testimonials{
@@ -208,7 +235,7 @@ ul .dropdown-menu{
     ;
     margin-top: 30px;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to right, #4f48cf);
+    color:#4F48CF;
 }
 
 hr {
@@ -316,3 +343,17 @@ hr {
       width: 50%;
     }
   } 
+
+  /**********************Modal******************/
+  .btn-close{
+    font-size:20px;
+
+  }
+ .modal-header {
+    background-image: linear-gradient(to right, #19A7CE, #146C94 );
+
+ }
+.formbold-form-head-label{
+    color: rgb(255, 255, 255);
+    font-size:30px;
+}
