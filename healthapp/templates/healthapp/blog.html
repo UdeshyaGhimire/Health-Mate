@@ -1,0 +1,85 @@
+{% extends './base.html' %}
+{% block content %}
+<head>
+	<title>Blog | HealthMate</title>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+	<header class="bg-blue-500 text-white p-4">
+	  <h1 class="text-3xl font-bold">Blog</h1>
+	  <style>
+		.blog-card{
+		  background-color: #F5F7FA;
+		  border-radius: 0.5rem;
+		  padding: 2rem;
+		  transition: transform 0.3s ease;
+		}
+	
+		.blog-card:hover {
+		  transform: translateY(-5px);
+		}
+	  </style>
+	</header>
+  
+	<div class="container mx-auto my-8 px-4">
+	  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+		<div class="md:col-span-2">
+		  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			<div class="blog-card bg-white shadow-lg rounded-lg p-4">
+			  <img src="blog-image-1.jpg" alt="Blog Image" class="w-full mb-4 rounded-lg">
+			  <h2 class="text-xl font-bold">Blog Title 1</h2>
+			  <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<!-- More blog cards can be added here -->
+			<div class="blog-card bg-white shadow-lg rounded-lg p-4">
+				<img src="blog-image-1.jpg" alt="Blog Image" class="w-full mb-4 rounded-lg">
+				<h2 class="text-xl font-bold">Blog Title 1</h2>
+				<p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			  </div>
+			  <div class="blog-card bg-white shadow-lg rounded-lg p-4">
+				<img src="blog-image-1.jpg" alt="Blog Image" class="w-full mb-4 rounded-lg">
+				<h2 class="text-xl font-bold">Blog Title 1</h2>
+				<p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			  </div>
+			  <div class="blog-card bg-white shadow-lg rounded-lg p-4">
+				<img src="blog-image-1.jpg" alt="Blog Image" class="w-full mb-4 rounded-lg">
+				<h2 class="text-xl font-bold">Blog Title 1</h2>
+				<p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			  </div>
+			  <div class="blog-card bg-white shadow-lg rounded-lg p-4">
+				<img src="blog-image-1.jpg" alt="Blog Image" class="w-full mb-4 rounded-lg">
+				<h2 class="text-xl font-bold">Blog Title 1</h2>
+				<p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			  </div>
+			  <div class="blog-card bg-white shadow-lg rounded-lg p-4">
+				<img src="blog-image-1.jpg" alt="Blog Image" class="w-full mb-4 rounded-lg">
+				<h2 class="text-xl font-bold">Blog Title 1</h2>
+				<p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			  </div>
+		  </div>
+		</div>
+		
+  
+		<aside class="md:col-span-1">
+		  <div class="bg-white shadow-lg rounded-lg p-4">
+			<h2 class="text-xl font-bold mb-4">Other News</h2>
+			<ul class="space-y-2">
+			  <li class="text-blue-500"><a href="#">News 1</a></li>
+			  <li class="text-blue-500"><a href="#">News 2</a></li>
+			  <li class="text-blue-500"><a href="#">News 3</a></li>
+			  <li class="text-blue-500"><a href="#">News 1</a></li>
+			  <li class="text-blue-500"><a href="#">News 2</a></li>
+			  <li class="text-blue-500"><a href="#">News 3</a></li>
+			  <li class="text-blue-500"><a href="#">News 1</a></li>
+			  <li class="text-blue-500"><a href="#">News 2</a></li>
+			  <li class="text-blue-500"><a href="#">News 3</a></li>
+			  <!-- More news items can be added here -->
+			</ul>
+		  </div>
+		</aside>
+	  </div>
+	</div>
+  
+	
+  </body>
+{% endblock content %}
