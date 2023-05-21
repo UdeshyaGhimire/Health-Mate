@@ -1,0 +1,65 @@
+{% extends './base.html' %}
+
+{% block content %}
+
+<head>
+    <title>Our Doctors | HealthMate</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white p-4">
+      <h1 class="text-3xl font-bold">Our Doctors</h1>
+      <style>
+		.doctor-card {
+		  background-color: #F5F7FA;
+		  border-radius: 0.5rem;
+		  padding: 2rem;
+		  transition: transform 0.3s ease;
+		}
+	
+		.doctor-card :hover {
+		  transform: translateY(-5px);
+		}
+	  </style>
+    </header>
+  
+    <div class="container mx-auto my-8 px-4">
+      <h2 class="text-2xl font-bold mb-4">Neuropsychiatrists</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class=" bg-white shadow-lg rounded-lg p-4">
+          <img src="neuropsychiatrist1.jpg" alt="Neuropsychiatrist" class="w-full mb-4 rounded-lg">
+          <h3 class="text-xl font-bold">Dr. John Smith</h3>
+          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac lacus mi.</p>
+        </div>
+  
+        <div class=" doctor-card bg-white shadow-lg rounded-lg p-4">
+          <img src="neuropsychiatrist2.jpg" alt="Neuropsychiatrist" class="w-full mb-4 rounded-lg">
+          <h3 class="text-xl font-bold">Dr. Sarah Johnson</h3>
+          <p class="text-gray-600">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+        </div>
+      </div>
+  
+      <h2 class="text-2xl font-bold my-8">Pediatricians</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-white shadow-lg rounded-lg p-4">
+          <img src="pediatrician1.jpg" alt="Pediatrician" class="w-full mb-4 rounded-lg">
+          <h3 class="text-xl font-bold">Dr. Emily Davis</h3>
+          <p class="text-gray-600">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+        </div>
+  
+        <div class=" bg-white shadow-lg rounded-lg p-4">
+          <img src="pediatrician2.jpg" alt="Pediatrician" class="w-full mb-4 rounded-lg">
+          <h3 class="text-xl font-bold">Dr. Michael Brown</h3>
+          <p class="text-gray-600">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+        </div>
+      </div>
+  
+      <!-- More categories and doctors can be added similarly -->
+  
+    </div>
+  
+    
+  </body>
+
+
+{% endblock content %}
