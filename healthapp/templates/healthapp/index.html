@@ -1,129 +1,265 @@
 {% extends './base.html' %}
 {% block content %}
-{% comment %} banner section {% endcomment %}
-<section id="banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 banner-text">
-        <p class="My-title">Welcome to HealthMate</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          <a href="./consultationform.html">
-            <button type="button" class="btn btn-primary btn-lg">
-              Make Appointment</button></a>
-      </div>
-      <div class="col-md-6 banner-img">
-        <img src="/static/img/Doctors.png" alt="" class="img-fluid" alternate="Banner">
-      </div>
-    </div>
-  </div>
-  <img src="/static/img/wave1.png" class="bottom-img">
-</section>
 
+  {% comment %} banner section {% endcomment %}
+  <head>
+    <link rel="stylesheet" href="/static/sidenav.css">
+  </head>
+  <section id="banner">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1 banner side-nav align-self-center">
+          
 
-<!---------------service section-------------->
-<section id="services">
-  <div class="container text-center">
-    <h1 class="title">OUR SERVICES</h1>
-    <div class="row text-center">
-      <div class="col-md-4 services ">
-        <img src="/static/img/doc1.png" class="service-img">
-        <h4>FIND DOCTORS</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ipsa, perspiciatis repellendus maiores
-          ducimus!</p>
+  <ul>
+    <li>
+      <div class="home-icon">
+        {% comment %} <div class="roof">
+          <div class="roof-edge"></div>
+        </div> {% endcomment %}
+        <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+       
       </div>
-
-      <div class="col-md-4 services ">
-        <img src="/static/img/med1.png" class="service-img">
-        <h4>SEARCH MEDICINES</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veniam laudantium illum soluta, veritatis
-          numquam.</p>
+    </li>
+    <li>
+      <div class="about-icon">
+        <i class="fa fa-search fa-lg" aria-hidden="true"></i>
       </div>
-      <div class="col-md-4 services ">
-        <img src="/static/img/doc1.png" class="service-img">
-        <h4>GET HEALTH TIPS</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ipsa, perspiciatis repellendus maiores
-          ducimus!</p>
+    </li>
+    <li>
+      <div class="work-icon">
+        <i class="fa fa-search fa-lg" aria-hidden="true"></i>
       </div>
-    </div>
-    <button type="button" class="btn btn-primary">All Services</button>
-  </div>
-</section>
-<!---------------------- Testimonial Section ------------------------>
-<section id="testimonials">
-  <div class="container">
-    <h1 class="title text-center">TESTIMONIALS</h1>
-    <div class="row">
-      <div class="col-md-5 testimonials">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis dolores nostrum inventore delectus
-          minus.</p>
-        <img src="/static/img/angelina.jpg">
-        <p><b>Angelina Jolie</b></p>
-      </div>
-
-      <div class="col-md-5 testimonials">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis dolores nostrum inventore delectus
-          minus.</p>
-        <img src="/static/img/jennifer.jpg">
-        <p><b>Jennifer Lopez</b></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--Doctors Section-->
-<section id="doctors">
-  <div class="container text-centre">
-    <h1 class="title text-center">OUR DOCTORS</h1>
-    <div class="row">
-      <div class="col-md-3 doctors">
-        <div class="card" style="width: 18rem;">
-          <img src="/static/img/doc5.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Dr.Mellisa Betner</h5>
-            <p class="card-text">Senior Consultant Physician, Best Gastroenterologist and Hepatologist in USA.</p>
-            <a href="#" class="btn btn-primary">View Profile</a>
-          </div>
+    </li>
+    <li>
+      <div class="mail-icon">
+        <div class="mail-base">
+          <div class="mail-top"></div>
         </div>
       </div>
-      <div class="col-md-3 doctors">
-        <div class="card" style="width: 18rem;">
-          <img src="/static/img/doc4.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Dr.Adrian Smith</h5>
-            <p class="card-text"> Consultant Physician/Endocrine Researcher with experience of over seven years </p>
-            <a href="#" class="btn btn-primary">View Profile</a>
-          </div>
+    </li>
+  </ul>
+</div>
+
+        {% comment %} <div class="col-md-1 banner side-nav align-self-center">
+          <ul>
+            <li><span><i class="fa fa-search fa-lg" aria-hidden="true"></i></span></li>
+            <li><i class="fa fa-search fa-lg" aria-hidden="true"></i></li>
+            <li><i class="fa fa-search fa-lg" aria-hidden="true"></i></li>
+            <li><i class="fa fa-search fa-lg" aria-hidden="true"></i></li>
+          </ul>
+        </div> {% endcomment %}
+        <div class="col-md-3 banner-softbox ">
+
+        </div>
+        
+        <div class="col-md-3 banner-text">
+          <p class="My-title">Welcome to HealthMate</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore tempor incididunt ut labore tempor incididunt ut labore </p> 
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+             Make Appointment</button>
+             
+        </div>
+        <div class="col-md-3 banner-img">
+          <img src="static/img/Doctors.png" alt="" class="img-fluid" alternate="Banner">
+        </div>
+        
+
+      </div>
+    </div>
+    <img src="static/img/wave1.png" class="bottom-img">
+  </section>
+
+  <!--------------service section-------------->
+  <section id="services">
+    <div class="container text-center">
+      <h1 class="title">OUR SERVICES</h1>
+      <div class="row text-center">
+        <div class="col-md-4 services ">
+          <img src="static/img/doc1.png" class="service-img">
+          <h4>FIND DOCTORS</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ipsa, perspiciatis repellendus maiores
+            ducimus!</p>
+        </div>
+
+        <div class="col-md-4 services ">
+          <img src="static/img/med1.png" class="service-img">
+          <h4>SEARCH MEDICINES</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veniam laudantium illum soluta, veritatis
+            numquam.</p>
+        </div>
+        <div class="col-md-4 services ">
+          <img src="static/img/doc1.png" class="service-img">
+          <h4>GET HEALTH TIPS</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ipsa, perspiciatis repellendus maiores
+            ducimus!</p>
         </div>
       </div>
-      <div class="col-md-3 doctors">
-        <div class="card" style="width: 18rem;">
-          <img src="/static/img/doc2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Dr.Kevin Ngueye</h5>
-            <p class="card-text">Consultant Emergency Physician and Chief of the Emergency Department,Consultant
-              Physician.</p>
-            <a href="#" class="btn btn-primary">View Profile</a>
-          </div>
+      <button type="button" class="btn btn-primary">All Services</button>
+    </div>
+  </section>
+  <!---------------------- Testimonial Section ------------------------>
+  <section id="testimonials">
+    <div class="container">
+      <h1 class="title text-center">TESTIMONIALS</h1>
+      <div class="row">
+        <div class="col-md-5 testimonials">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis dolores nostrum inventore delectus
+            minus.</p>
+            <img src="static/img/angelina.jpg">
+            <p><b>Angelina Jolie</b></p>
+        </div>
+
+        <div class="col-md-5 testimonials">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis dolores nostrum inventore delectus
+            minus.</p>
+            <img src="static/img/jennifer.jpg">
+            <p><b>Jennifer Lopez</b></p>
         </div>
       </div>
-      <div class="col-md-3 doctors">
-        <div class="card" style="width: 18rem;">
-          <img src="/static/img/doc3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Dr.Sam Stan</h5>
-            <p class="card-text">Consultant Urologist and Andrologist,Male Infertility Specialist.</p>
-            <a href="#" class="btn btn-primary">View Profile</a>
-          </div>
-        </div>
+    </div>
+  </section>
+
+  <!---------------------------Modal-------------------------------->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+<h3> Please fill out the following form </h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <button type="button" class="btn btn-primary">All Doctors</button>
+      <div class="modal-body">
+        <form method="POST">
+          <div class="formbold-mb-5">
+            <label for="name" class="formbold-form-label"> Full Name </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              class="formbold-form-input"
+            />
+          </div>
+          <div class="formbold-mb-5">
+            <label for="phone" class="formbold-form-label"> Phone Number </label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Enter your phone number"
+              class="formbold-form-input"
+            />
+          </div>
+          <div class="formbold-mb-5">
+            <label for="email" class="formbold-form-label"> Email Address </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              class="formbold-form-input"
+            />
+          </div>
+          <div class="formbold-mb-5">
+            <label for="phone" class="formbold-form-label"> Appointment </label>
+            <select id="department" name="department" class="formbold-form-input" required>
+              <option value="">Select</option>
+              <option value="department1">Department 1</option>
+              <option value="department2">Department 2</option>
+              <option value="department3">Department 3</option>
+            </select>
+          </div>
+          <div class="flex flex-wrap formbold--mx-3">
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5 w-full">
+                <label for="date" class="formbold-form-label"> Date </label>
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-half formbold-px-3">
+              <div class="formbold-mb-5">
+                <label for="time" class="formbold-form-label"> Time </label>
+                <input
+                  type="time"
+                  name="time"
+                  id="time"
+                  class="formbold-form-input"
+                />
+              </div>
+            </div>
+          </div>
+    
+          <div class="formbold-mb-5 formbold-pt-3">
+            <label class="formbold-form-label formbold-form-label-2">
+              Address Details
+            </label>
+            <div class="flex flex-wrap formbold--mx-3">
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input
+                    type="text"
+                    name="area"
+                    id="area"
+                    placeholder="Enter area"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    placeholder="Enter city"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input
+                    type="text"
+                    name="state"
+                    id="state"
+                    placeholder="Enter state"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <input
+                    type="text"
+                    name="post-code"
+                    id="post-code"
+                    placeholder="Post Code"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div>
+            <button class="formbold-btn">Book Appointment</button>
+          </div>
+        </form>
+      </div>
+    
     </div>
   </div>
-</section>
-
-<!-- End Doctors Section-->
-
+</div>
+<!------------------------------Modal end------------------------------------>
 
 
-{% endblock %}
+
+
+  
+  {% endblock %}

@@ -13,7 +13,10 @@ body {
     z-index: 10;
 
 }
-
+.container{
+    max-width: unset;
+    max-height:max-content;
+}
 .navbar {
     background-image: linear-gradient(to right, #19A7CE, #146C94 );
     padding: 0;
@@ -31,16 +34,34 @@ body {
 
 }
 
-.navbar-nav li a :focus,
-.navbar-nav li a:hover {
-    color: black;
+.nav-item li a:focus,
+.nav-tem li a:hover {
+    color: rgb(145, 24, 24);
 
 }
+
 ul .dropdown-menu{
-    background-color:  #146C94;
+    position:absolute;
+    background-color:  #4f48cf;
     margin: 0px;
     padding: 0px;
+    width:300;
+    
 }
+
+li .nav-item{
+    border-right: #6b7280;
+}
+    
+
+li .dropdown-item:hover{
+    
+    color: white;
+   background-color:#1796BE;
+   border-bottom: #6b7280;
+}
+
+
 
 /* .dropdown-menu li {
     background-color: #30cd67;
@@ -57,23 +78,64 @@ ul .dropdown-menu{
     background-image: linear-gradient(to right, #19A7CE, #146C94 );
     color: white;
     padding-top: 5%;
+    width: 100%;
+    height: 750px;
 }
 
 .My-title {
     font-size: 40px;
     font-weight: 600;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .btn {
     margin-top: 15px;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to right, #2121fa, blue);
+    background-image: linear-gradient(to right, #4f48cf);
 }
-
 .bottom-img {
     width: 100%;
+    padding-top: 65px;
 }
+#banner .btn-primary{
+   background-color:#4f48cf;
+   border-color:#4f48cf;
+} 
+#banner .btn-primary:hover{
+    background-color: #1796BE;
+    border-color: #1796BE;
+}
+#banner .banner-softbox {
+    border-radius: 50px;
+background: #ffffff;
+box-shadow: rgba(68, 65, 65, 0.35) 0px 5px 15px;
+margin-left: 90px;
+margin-right: 70px;
+
+}
+.row{
+    display: flex;
+}
+#banner .side-nav{
+    position: relative;
+
+
+/* border-radius: 27px;
+width: 50px;
+height: 250px; */
+justify-content: center;
+}
+.side-nav ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.side-nav ul{
+    margin:0;
+    padding: 0;
+}
+
 
 /*---------------------- Service Section ----------------------------- */
 #services {
@@ -122,8 +184,11 @@ ul .dropdown-menu{
     padding: 8px 25px;
     border:none;
     border-radius: 20px;
-    background-image: linear-gradient(to right, #2121fa, blue);
+    background-color: #4f48cf;
     
+}
+#services .btn-primary:hover{
+    background-color: #1796BE;
 }
 /* ------------------Testimonial Section ------------------ */
 #testimonials{
@@ -208,7 +273,7 @@ ul .dropdown-menu{
     ;
     margin-top: 30px;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to right, #2121fa, blue);
+    color:#4F48CF;
 }
 
 hr {
@@ -274,7 +339,7 @@ hr {
     resize: none;
   }
   .formbold-form-input:focus {
-    border-color: #6a64f1;
+    border-color: #4f48cf;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
   }
 
@@ -285,7 +350,7 @@ hr {
     padding: 14px 32px;
     border: none;
     font-weight: 600;
-    background-color: #6a64f1;
+    background-color: #4f48cf;
     color: white;
     width: 100%;
     cursor: pointer;
@@ -317,22 +382,101 @@ hr {
     }
   } 
 
-  /* Doctors Section CSS  */
+  /**********************Modal******************/
+  .btn-close{
+    font-size:20px;
 
-  #doctors {
-    padding: 80px 0;
+  }
+ .modal-header {
+    background-image: linear-gradient(to right, #19A7CE, #146C94 );
+
+ }
+.formbold-form-head-label{
+    color: rgb(255, 255, 255);
+    font-size:30px;
 }
-.doctors{
+
+  
+
+
+
+/******************Our Services page*****************/
+
+
+/****************Blog page***********************/
+
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+   
+}
+@media (min-width: 30em) {
+    .band {
+        grid-template-columns: 1fr 1fr;
+   }
+}
+@media (min-width: 60em) {
+    .band {
+        grid-template-columns: repeat(4, 1fr);
+   }
+}
+.card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+}
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+.card article {
     padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-  #doctors .btn-primary{
-    box-shadow:none;
-    padding: 8px 25px;
-    border:none;
-    border-radius: 20px;
-    background-image: linear-gradient(to right, #2121fa, blue);
-    
+.card h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
 }
-.cards{
-    padding:10px;
+.card p {
+    flex: 1;
+    line-height: 1.4;
 }
+.card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 2em 0 0 0;
+}
+.card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+}
+@media (min-width: 60em) {
+    .item-1 {
+        grid-column: 1 / span 2;
+   }
+    .item-1 h1 {
+        font-size: 24px;
+   }
+}
+
+
