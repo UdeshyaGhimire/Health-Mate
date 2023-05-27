@@ -16,4 +16,6 @@ def ourservices(request):
     return render(request, 'healthapp/ourservices.html')
 def ourdoctors(request):
     return render(request, 'healthapp/ourdoctors.html')
+def base(request):
+    return render(request, 'healthapp/base.html')
 

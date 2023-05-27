@@ -1,52 +1,135 @@
 {% extends './base.html' %}
 
 {% block content %}
+<html>
 <head>
-    <title>Our Services | HealthMate</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-      .service-card {
-        background-color: #F5F7FA;
-        border-radius: 0.5rem;
-        padding: 2rem;
-        transition: transform 0.3s ease;
-      }
-  
-      .service-card:hover {
-        transform: translateY(-5px);
-      }
-    </style>
-  </head>
-  <body>
-    <header class="bg-blue-500 text-white p-4">
-      <h1 class="text-3xl font-bold">Our Services</h1>
-    </header>
-  
-    <div class="container mx-auto my-8 px-4">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        <div class="service-card">
-          <img src="service-icon-1.png" alt="Service Icon" class="w-12 h-12 mb-4">
-          <h3 class="text-xl font-bold mb-2">Service Title 1</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-  
-        <div class="service-card">
-          <img src="service-icon-2.png" alt="Service Icon" class="w-12 h-12 mb-4">
-          <h3 class="text-xl font-bold mb-2">Service Title 2</h3>
-          <p class="text-gray-600">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-        </div>
-  
-        <div class="service-card">
-          <img src="service-icon-3.png" alt="Service Icon" class="w-12 h-12 mb-4">
-          <h3 class="text-xl font-bold mb-2">Service Title 3</h3>
-          <p class="text-gray-600">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
-        </div>
-  
-        <!-- Add more service cards here -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Section Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    
+:root {
+  --main-color: #3f51b5;
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.containerone h2 {
+  text-align: center;
+  padding-top: 1%;
+  margin-bottom: 60px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  position: relative;
+}
+.containerone h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background-color: var(--main-color);
+  border-radius: 20px;
+}
+.containerone .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 30px;
+ padding-left:20%;
+ padding-right:20%;
+
+}
+.row .serviceone {
+  padding: 25px 15px;
+  background: transparent;
+  font-size: 15px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.row .serviceone:hover {
+  color: #fff;
+  background-color: var(--main-color);
+  transform: scale(1.05);
+}
+.row .serviceone i {
+  color: var(--main-color);
+  margin-bottom: 20px;
+  font-size: 40px;
+  transition: 0.5s;
+}
+.row .serviceone:hover i {
+  color: #fff;
+}
+.row .service h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+  </style>
+</head>
+
+<body>
+  <section class="containerone">
+    <h2>Our Services</h2>
+    <div class="row">
+      <div class="serviceone">
+        <i class="ri-macbook-line"></i>
+        <h3>Web Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="serviceone">
+        <i class="ri-store-3-line"></i>
+        <h3>Marketing</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="serviceone">
+        <i class="ri-database-2-line"></i>
+        <h3>Data Analysis</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="serviceone">
+        <i class="ri-palette-line"></i>
+        <h3>Graphic Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="serviceone">
+        <i class="ri-android-line"></i>
+        <h3>App Development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="serviceone">
+        <i class="ri-account-box-line"></i>
+        <h3>Accouting</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="serviceone">
+        <i class="ri-hand-coin-line"></i>
+        <h3>Business Management</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="serviceone">
+        <i class="ri-english-input"></i>
+        <h3>English Teaching</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
-  
-   
-  </body>
+  </section>
+</body>
+
+</html>
 
 {% endblock content %}
