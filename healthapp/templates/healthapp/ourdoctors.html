@@ -2,6 +2,62 @@
 
 {% block content %}
 
+<!-- <section id="ourdoctors"> -->
+<div class="container">
+    {% for doctor, range, nSlides in allDocs %}
+    <h5 class="my-4"> {{doctor.0.department}} </h5>
+    <div class="row">
+        <div id="demo{{forloop.counter}}" class="col carousel slide my-3" data-bs-ride="carousel">'
+            <ul class="carousel-indicators">
+                <li data-bs-target="#demo{{forloop.counter}}" data-bs-slide-to="0" class="active"></li>
+                {% for i in range %}
+                <li data-bs-target="#demo{{forloop.parentloop.counter}}" data-bs-slide-to="{{i}}"></li>
+                {% endfor %}
+            </ul>
+
+            <!--        slideshow starts here-->
+
+            <div class="carousel-inner no-padding">
+                <div class="carousel-item active">
+
+                    {% for i in doctor %}
+                    <div class="col-xs-3 col-sm-3 col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src='/media/{{i.image}}' class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{i.full_name}}</h5>
+                                <p class="card-text">{{i.qualification_name}}</p>
+                                <a href="#" class="btn btn-primary">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
+                </div>
+                <div class="carousel-item">
+                    {% endif%}
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- </section> -->
+
+        <!-- left and right controls for the slide -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo{{forloop.counter}}"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <!-- <span class="visually-hidden">Previous</span> -->
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo{{forloop.counter}}"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <!-- <span class="visually-hidden">Next</span> -->
+        </button>
+    </div>
+    {% endfor %}
+
+</div>
 
 
 {% endblock content %}
