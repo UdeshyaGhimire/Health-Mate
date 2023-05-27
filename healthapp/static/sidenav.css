@@ -1,4 +1,4 @@
-*,*:before,*:after {
+/* *,*:before,*:after {
 	box-sizing: border-box;
 }
 
@@ -68,4 +68,51 @@
 
 .side-nav ul li div { position: relative; }
 
+ */
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
+ 
+ 
+ /* nav css  */
+.sidebar {
+	margin-top:-120px;
+	
+   background-color: #4f48cf;
+   width: max-content;
+   padding: 0.5rem 0.8rem;
+   z-index: 11;
+   position: fixed;
+   
+   display: flex;
+   gap: 0.8rem;
+   border-radius: 3rem;
+   backdrop-filter: blur(15px);
+   font-size: 1.2rem;
+   transition: all 0.2s ease-in-out; 
+   
+ }
+ .sidebar a {
+   background: transparent;
+   padding: 0.5rem 0.3rem;
+   border-radius: 100px;
+   display: flex;
+   color: white;
+ }
+ .sidebar a:hover {
+   background: rgba(0, 0, 0, 0.3);
+   color: black;
+ }
+ .sidebar a:active {
+   background-color: #ffffff;
+   color: black;}
+
+ .sidebar:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 25px 15px -15px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	
+  }
+ 
+
+ /*search slide out*/
+ 
