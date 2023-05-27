@@ -524,6 +524,10 @@ body {
 }
 
 * Our doctors page Css */ 
+.carousel-item {
+    flex-direction: column;
+
+}
 
 .col-md-3 {
     display: inline-block;
